@@ -4,7 +4,6 @@ module Personaggi
 
 	class Mago < Personaggio
 
-
 		@@carattere = {
 				stamina: 0.3,
 				intelletto: 1,
@@ -13,15 +12,8 @@ module Personaggi
 				difesaFisica: 0.1,
 				difesaMagica: 0.8 }
 
-
 		def initialize
 			@schedaSkill = Personaggio.costruisciSkill(@@carattere)
-		end
-		
-		def self.costruisci
-			mago = Mago.new
-			mago.costruisciPg
-			mago
 		end
 		
 	end

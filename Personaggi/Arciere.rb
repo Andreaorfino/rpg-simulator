@@ -3,10 +3,9 @@ require "./Personaggi/Personaggio.rb"
 module Personaggi
 
 	class Arciere < Personaggio
-	
 
 		@@carattere = {
-				stamina: 0.6, 
+				stamina: 0.6,
 				intelletto: 0.8, 
 				forzaFisica: 0.8, 
 				forzaMagica: 0.4, 
@@ -16,12 +15,6 @@ module Personaggi
 			def initialize
 				@schedaSkill = Personaggio.costruisciSkill(@@carattere)
 			end
-
-		def self.costruisci
-			arciere = Arciere.new
-			arciere.costruisciPg
-			arciere
-		end
 		
 	end
 

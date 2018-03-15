@@ -3,7 +3,6 @@ require "./Personaggi/Personaggio.rb"
 module Personaggi
 
 	class Guerriero < Personaggio
-	
 
 		@@carattere = {
 				stamina: 1,
@@ -15,12 +14,6 @@ module Personaggi
 
 		def initialize
 			@schedaSkill = Personaggio.costruisciSkill(@@carattere)
-		end
-
-		def self.costruisci
-			guerriero = Guerriero.new
-			guerriero.costruisciPg
-			guerriero
 		end
 		
 	end
