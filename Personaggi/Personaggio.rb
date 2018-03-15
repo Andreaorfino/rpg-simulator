@@ -1,16 +1,9 @@
 module Personaggi
 
-	class Personaggio    
-	
-#	skill comuni
-#	stamina			:0
-#	itelletto		:1
-#	forzaFisica		:2
-#	forzaMagica		:3
-#	difesaFisica	:4
-#	difesaMagica	:5
+	class Personaggio
 
 		attr_reader :schedaSkill
+
 		attr_reader :carattere
 
 		def stampSkillPg

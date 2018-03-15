@@ -12,9 +12,9 @@ module Personaggi
 				difesaFisica: 0.5, 
 				difesaMagica: 0.5 }
 
-			def initialize
-				@schedaSkill = Personaggio.costruisciSkill(@@carattere)
-			end
+		def initialize
+			@schedaSkill = Personaggio.costruisciSkill(@@carattere)
+		end
 		
 	end
 
