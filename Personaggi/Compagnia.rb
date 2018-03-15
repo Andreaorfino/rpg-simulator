@@ -1,32 +1,23 @@
-module Personaggi
+require "./Personaggi/Personaggio.rb"
 
-	require "./Personaggi/Pg.rb"
+module Personaggi
 
 	class Compagnia
 		attr_reader :gruppo
 		
-		def creaGruppo
+		def initialize
 			@gruppo=[]
-			@gruppo[0] = Guerrieri.costruisci
-			@gruppo[1] = Maghi.costruisci
-			@gruppo[2] = Ladri.costruisci
-			@gruppo[3] = Arcieri.costruisci
+			@gruppo[0] = Guerriero.costruisci
+			@gruppo[1] = Mago.costruisci
+			@gruppo[2] = Ladro.costruisci
+			@gruppo[3] = Arciere.costruisci
 		end
 		
-		def self.costruisci
-			compagnia = Compagnia.new
-			compagnia.creaGruppo
-			compagnia
+		def to_s
+			l=""
+			@gruppo.each{|ele| l << "#{ele.class.to_s[12..-1]} con:  #{ele.to_s}\n" }
+			l
 		end
-		
-		def stampaGruppo
-			@gruppo.each{|ele| puts "#{ele.class.to_s} con \"#{ele.skillPg}\"" }
-		end
-		
-		def getGruppo
-			@gruppo
-		end
-		
 	end
 
 end

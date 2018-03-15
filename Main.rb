@@ -1,8 +1,8 @@
-class Main
-	Dir["./Personaggi/*.rb"].each {|file| require file }
-	
+Dir["./Personaggi/*.rb"].each {|file| require file }
 
-	tutti = Personaggi::Compagnia.costruisci
-	tutti.stampaGruppo
+class Main
+
+	tutti = Personaggi::Compagnia.new
+	puts tutti.to_s
 	
 end
