@@ -14,6 +14,7 @@ module Personaggi
 		
 		attr_reader :carattere
 		
+		
 		def stampSkillPg
 			puts ret
 		end
