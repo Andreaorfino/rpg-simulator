@@ -24,6 +24,12 @@ module Personaggi
 			@schedaSkill.each{|key, value| ret<<"#{key.to_s}: #{value.to_s}   "}
 			ret
 		end
+
+		def self.costruisciSkill(carattere)
+			tmp = {}
+			carattere.each {|key,value| tmp[key]=(rand(100)*carattere[key]).floor}
+			return tmp
+		end
 		
 		def costruisciPg
 			@schedaSkill = {}

@@ -7,10 +7,10 @@ module Personaggi
 		
 		def initialize
 			@gruppo=[]
-			@gruppo[0] = Guerriero.costruisci
-			@gruppo[1] = Mago.costruisci
-			@gruppo[2] = Ladro.costruisci
-			@gruppo[3] = Arciere.costruisci
+			@gruppo[0] = Guerriero.new
+			@gruppo[1] = Mago.new
+			@gruppo[2] = Ladro.new
+			@gruppo[3] = Arciere.new
 		end
 		
 		def to_s
